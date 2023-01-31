@@ -8,7 +8,7 @@ def main():
         line=line.strip("\n")
         url=line
         try:
-            #url="http://s6000.sgcc.com.cn/WebContent/s6000/main/index.jsp#no-back"
+            #url="http://s6000.sgcaddsafsc.com.cn/WebContent/s6000/main/index.jsp#no-back"
             r=requests.get(url,verify=True,timeout=3)
             print(url+" "+str(r.status_code))
             print(str(r.text))
